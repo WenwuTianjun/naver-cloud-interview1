@@ -58,9 +58,9 @@ public class MyArrayQueue<E> {
         }
 
         Object o = arr[0];
-        for (int i = 0; i < tail - 1; i++) {
+        for (int i = 0; i < tail; i++) {
             arr[i] = arr[i + 1];
-            if (i == tail - 2) {
+            if (i == tail - 1) {
                 arr[i] = null;
             }
         }
