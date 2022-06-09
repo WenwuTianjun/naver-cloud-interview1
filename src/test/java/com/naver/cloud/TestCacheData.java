@@ -20,6 +20,7 @@ public class TestCacheData {
             new Thread(() -> {
                 cachedData.put("hello" + temp, "world" + temp);
                 System.out.println(cachedData.get("hello" + temp));
+
             }).start();
         }
     }
